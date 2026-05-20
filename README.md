@@ -28,7 +28,7 @@ For both observations, the extracted continuous features are: *Mean, Standard De
 
 A **Decision Tree** was explicitly chosen over complex black-box algorithms (like Neural Networks) for two strict engineering constraints:
 1. **Extremely Low Computational Cost:** Perfect for hardware with limited power budgets.
-2. **Total Interpretability (White-Box):** The tree's splits, calculated via *Shannon Entropy* and *Information Gain*, allow us to extract explicit physical rules (e.g., *if Kurtosis > 1.16 $\rightarrow$ Pulsar*).
+2. **Total Interpretability (White-Box):** The tree's splits, calculated via *Shannon Entropy* and *Information Gain*, allow us to extract explicit physical rules.
 
 ## ⚙️ Methodology & Architecture
 The project is structured into a rigorous end-to-end pipeline:
