@@ -19,7 +19,6 @@ int classify_pulsar(float raw_mean_profile, float raw_kurt_profile, float raw_sk
     int skew_bin = discretize(raw_skew_profile, -0.0689, 0.5760);
     int stdc_bin = discretize(raw_std_curve, 15.5557, 23.3080);
 
-
     if (kurt_bin == 2 && stdc_bin == 2 && skew_bin == 2 && mean_bin == 0) {
         return 1; // It's a pulsar! Send data to Earth for further analysis
     }
