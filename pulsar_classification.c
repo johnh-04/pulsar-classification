@@ -2,6 +2,7 @@
 
 // KBinsDiscretizer-like function to convert raw float values into discrete bins (0, 1, 2)
 int discretize(float raw_value, float threshold_1, float threshold_2) {
+    
     if (raw_value <= threshold_1) {
         return 0; // Low (Bin 0)
     } else if (raw_value <= threshold_2) {
@@ -9,6 +10,7 @@ int discretize(float raw_value, float threshold_1, float threshold_2) {
     } else {
         return 2; // High (Bin 2)
     }
+    
 }
 
 // Returns 0 for RFI (Noise) and 1 for actual Pulsar
