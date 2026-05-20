@@ -8,8 +8,10 @@ __pycache__/
 *$py.class
 venv/
 env/
+pulsar-venv/
 .env
 .venv/
+.pulsar-venv/
 Pipfile.lock
 
 .ipynb_checkpoints/
