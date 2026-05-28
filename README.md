@@ -28,7 +28,7 @@ The project workflow is documented in a rigorous, step-by-step Jupyter Notebook:
   * 2.4 Correlation Matrix
   * Phase 2: Summary & Insights
 * **Phase 3: Data Transformation**
-  * 3.1 Separating features and target variable
+  * 3.1 Separating Features and Target Variable
   * 3.2 Dataset Split
   * 3.3 Feature Selection
   * 3.4 Discretization (Binning)
