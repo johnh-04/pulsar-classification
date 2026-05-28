@@ -17,6 +17,7 @@
 #define STD_C_EDGE_2 23.3080f
 
 int discretize(float raw_value, float threshold_1, float threshold_2) {
+
     if (raw_value <= threshold_1) {
         return 0;   // Low (Bin 0)
     } else if (raw_value <= threshold_2) {
@@ -24,6 +25,7 @@ int discretize(float raw_value, float threshold_1, float threshold_2) {
     } else {
         return 2;   // High (Bin 2)
     }
+    
 }
 
 int classify_pulsar(float raw_mean_profile, float raw_kurt_profile, float raw_skew_profile, float raw_std_curve) {
@@ -38,6 +40,7 @@ int classify_pulsar(float raw_mean_profile, float raw_kurt_profile, float raw_sk
     }
     
     return 0; // It's just noise. Discard the data
+
 }
 
 int main() {
@@ -61,4 +64,5 @@ int main() {
     }
     
     return 0;
+
 }
